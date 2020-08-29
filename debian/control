@@ -1,4 +1,4 @@
-Source: openmediavault-snapraid
+Source: openmediavault-snapraid-btrfs
 Section: net
 XB-Plugin-Section: filesystems
 Priority: optional
@@ -7,29 +7,15 @@ Build-Depends: debhelper (>= 9.0.0)
 Standards-Version: 3.9.6
 Homepage: http://omv-extras.org/simple/
 
-Package: openmediavault-snapraid
+Package: openmediavault-snapraid-btrfs
 Architecture: all
 Depends: openmediavault (>= 5.0.5),
          omvextras-common,
-         snapraid (>= 11.3)
-Description: snapraid plugin for OpenMediaVault.
- SnapRAID is a backup program for disk arrays. It stores parity
- information of your data and it's able to recover from up to two
- disk failures.
- .
- SnapRAID is mainly targeted for a home media center, with a lot of
- big files that rarely change.
- .
- Beside the ability to recover from disk failures, other features of
- SnapRAID are:
- * All your data is hashed to ensure data integrity and to avoid
-   silent corruption.
- * If the failed disks are too many to allow a recovery, you lose the
-   data only on the failed disks. All the data in the other disks is safe.
- * If you accidentally delete some files in a disk, you can recover them.
- * You can start with already filled disks.
- * The disks of the array can have different sizes.
- * You can add disks at any time.
- * It doesn't lock-in your data. You can stop using SnapRAID at any time
-   without the need to reformat or move data.
-   @CCRAIGEN modified for use with BTRFS snapshot script
+         snapraid (>= 11.3),
+         snapper
+Description: snapraid plugin for OpenMediaVault (+BTRFS script)
+   @CCRAIGEN modified for use with BTRFS snapshot script, includes "snapraid" snapper template
+   -MUST- set up snapper configs for each drive
+   -MUST- create the .snapraid subvolume on each BTRFS drive
+   -MUST- do a single run of "snapraid sync" from command line to initialize content files
+   -RECOMMEND- that parity is created with mkfs.ext4 -F -L ParityX /dev/XXX -N 8192 -m 0 -J size=32

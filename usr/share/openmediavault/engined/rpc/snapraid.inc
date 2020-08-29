@@ -309,9 +309,17 @@ class OMVRpcServiceSnapRaid extends \OMV\Rpc\ServiceAbstract
                         );
                     }
                     break;
+				// @CCRAIGEN added specific cases where the script doesn't work
+				case "status":
+				case "smart":
+				case "devices":
+					$cmd = sprintf("export LANG=C; %s %s 2>&1",
+                        $this->getOriginal, $params['command']
+                    );
+					break;
                 default:
                     $cmd = sprintf("export LANG=C; %s %s 2>&1",
-                        $this->getOriginal, $params['command'] // @CCRAIGEN swapped getProgram to getOriginal
+                        $this->getProgram, $params['command']
                     );
             }
             $this->exec($cmd, $output, $bgOutputFilename);

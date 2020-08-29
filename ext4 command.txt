@@ -1,0 +1,1 @@
+mkfs.ext4 -F -L Parity1 /dev/XXX -N 8192 -m 0 -J size=32

@@ -29,7 +29,8 @@ parity {{ drive.path }}/snapraid.parity
 {%- endif %}
 {% endfor %}
 
-{% include "/etc/default/openmediavault-snapraid" ignore missing %}
+# @CCRAIGEN changed path to reflect package name change
+{% include "/etc/default/openmediavault-snapraid-btrfs" ignore missing %}
 
 {% for rule in config.rules.rule %}
 {%- if rule.rulefolder | length > 0 -%}
