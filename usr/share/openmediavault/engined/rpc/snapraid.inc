@@ -23,7 +23,9 @@ require_once("openmediavault/functions.inc");
 
 class OMVRpcServiceSnapRaid extends \OMV\Rpc\ServiceAbstract
 {
-    private $getProgram = "/usr/bin/snapraid";
+    // @CCRAIGEN added snapraid-btrfs option
+    private $getProgram = "/usr/bin/snapraid-btrfs";
+    private $getOriginal = "/usr/bin/snapraid";
     private $getLogFile = "/var/log/snapraid.log";
 
     public function getName()
@@ -309,7 +311,7 @@ class OMVRpcServiceSnapRaid extends \OMV\Rpc\ServiceAbstract
                     break;
                 default:
                     $cmd = sprintf("export LANG=C; %s %s 2>&1",
-                        $this->getProgram, $params['command']
+                        $this->getOriginal, $params['command'] // @CCRAIGEN swapped getProgram to getOriginal
                     );
             }
             $this->exec($cmd, $output, $bgOutputFilename);

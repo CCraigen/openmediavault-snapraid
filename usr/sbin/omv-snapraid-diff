@@ -225,7 +225,7 @@ if $DEBUG; then
 	_log "DEBUG: UPD_THRESHOLD: $UPD_THRESHOLD"
 fi
 
-SNAPRAID_BIN="$(which snapraid)"
+SNAPRAID_BIN="$(which snapraid-btrfs)"
 if [ -z $SNAPRAID_BIN ]; then
 	_log "WARN: snapraid executable not found!"
 fi
@@ -390,13 +390,13 @@ if [ $DEL_COUNT -gt 0 ] || [ $ADD_COUNT -gt 0 ] || [ $MOVE_COUNT -gt 0 ] || [ $C
 
 	# YES, check if number of updated files exceeds UPD_THRESHOLD and UPD_THRESHOLD is enabled
 	if [ $UPDATE_COUNT -gt $UPD_THRESHOLD ] && [ $UPD_THRESHOLD -gt 0 ]; then
-		
+
 		# YES, lets inform user and not proceed with the sync just in case
 		_log "INFO: Number of updated files ($UPDATE_COUNT) exceeded threshold ($UPD_THRESHOLD). NOT proceeding with sync job."
 		_log "INFO: Please run sync manually if this is not an error condition."
 		echo "Number of updated files ($UPDATE_COUNT) exceeded threshold ($UPD_THRESHOLD). NOT proceeding with sync job." >> $TMP_OUTPUT
 		echo "Please run sync manually if this is not an error condition" >> $TMP_OUTPUT
-		
+
 		_send_email "$EMAIL_SUBJECT_PREFIX - WARNING - Number of updated files (${UPDATE_COUNT}) exceeded threshold (${UPD_THRESHOLD})" "${TMP_OUTPUT}" "${EMAIL_SUBJECT_PREFIX}" "${OMV_MAIL_sender}"
 		_check_success && _rmtmp
 	fi
