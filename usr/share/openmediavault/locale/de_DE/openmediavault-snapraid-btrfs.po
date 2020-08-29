@@ -1,0 +1,299 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openmediavault-snapraid package.
+#
+# Translators:
+# Ettore Atalan <atalanttore@googlemail.com>, 2014-2016
+# Jan Neumann <omv@eingeord.net>, 2014
+# Ruben Stein <ruben@rstein.de>, 2015
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-snapraid-btrfs\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-28 08:40-0500\n"
+"PO-Revision-Date: 2017-09-19 21:49+0000\n"
+"Last-Translator: Aaron Murray <aaronmurray27@gmail.com>\n"
+"Language-Team: German (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-snapraid/language/de/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "A data drive cannot be a parity drive."
+msgstr "Ein Datenlaufwerk kann nicht ein Paritätslaufwerk sein."
+
+msgid "Add drive"
+msgstr "Laufwerk hinzufügen"
+
+msgid "Add rule"
+msgstr "Regel hinzufügen"
+
+msgid "Auto Save"
+msgstr "Automatische Sicherung"
+
+msgid ""
+"Automatically save the state when syncing after the specified amount of GiB "
+"is processed. Default value is 0, meaning disabled."
+msgstr "Automatische Synchronisierungsstatussicherung beim Erreichen der angegebenen Anzahl von verarbeiteten GiB. Voreinstellungswert ist 0; Damit ist die Automatik deaktiviert."
+
+msgid "Block Size"
+msgstr "Blockgröße"
+
+msgid "Block size in KiB"
+msgstr "Blockgröße in KB"
+
+msgid "Check"
+msgstr "Prüfen"
+
+msgid ""
+"Checks all the files and the redundancy data. All the files are hashed and "
+"compared with the snapshot saved in the previous 'sync' command."
+msgstr "Prüft alle Dateien und Prüfdaten. Für alle Dateien werden Prüfsummen erzeugt und mit der Momentaufnahme verglichen, die beim vorhergehenden 'sync'-Befehl gespeichert wurde."
+
+msgid "Component"
+msgstr "Komponente"
+
+msgid "Config"
+msgstr "Konfiguration"
+
+msgid "Content"
+msgstr "Verzeichnis"
+
+msgid "Create scheduled diff job"
+msgstr ""
+
+msgid "Data"
+msgstr "Daten"
+
+msgid "Date & Time"
+msgstr "Datum & Uhrzeit"
+
+msgid "Debug"
+msgstr "Fehlersuche"
+
+msgid ""
+"Define threshold of files deleted to start the sync-process. default = 0 to "
+"make sure no sync process is started while testing or if there are any "
+"deleted files"
+msgstr "Definieren Sie den Schwellwert von gelöschten Dateien ab dem eine Synchronisierung gestartet wird. (Standardwert=0: Stellt sicher, dass keine Synchronisierung gestartet wird während des Testens oder wenn Dateien gelöscht werden)"
+
+msgid "Delete Threshold"
+msgstr "Schwellenwert löschen"
+
+msgid "Description of Buttons on Drives tab"
+msgstr "Beschreibung von Schaltflächen im Reiter Laufwerke"
+
+msgid "Devices"
+msgstr "Geräte"
+
+msgid "Diff"
+msgstr "Diff"
+
+msgid "Diff Script Settings"
+msgstr "Diff-Skripteinstellungen"
+
+msgid "Down"
+msgstr "Stoppen"
+
+msgid "Drive"
+msgstr "Laufwerk"
+
+msgid ""
+"Drive where content file is stored.  This file is a list of saved files and "
+"contains the details of your backup with all the checksums to verify its "
+"integrity."
+msgstr "Laufwerk auf dem Verzeichnisdatei gespeichert ist. Diese datei enthält eine Liste von gespeicherten Dateien in Ihrer Sicherung und die Prüfsummen um deren Integrität sicherzustellen."
+
+msgid "Drive where data is stored."
+msgstr "Laufwerk, auf dem Daten gespeichert sind."
+
+msgid ""
+"Drive where parity files are stored which are necessary to recover from disk"
+" failure.  For each parity drive, one data drive can fail without data loss."
+msgstr "Laufwerk auf dem Pariätsdateien gespeichert werden. Diese Dateien sind notwendig um einen Laufwerksverlust zu kompensieren. Für jedes Paritätslaufwerk kann ein anderes Laufwerk ohne Datenverlust ausfallen."
+
+msgid "Drives"
+msgstr "Laufwerke"
+
+msgid "Edit drive"
+msgstr "Laufwerk bearbeiten"
+
+msgid "Edit rule"
+msgstr "Regel bearbeiten"
+
+msgid "Excludes hidden files and directories."
+msgstr "Schließt versteckte Dateien und Verzeichnisse aus."
+
+msgid "Exclusion"
+msgstr "Ausschluss"
+
+msgid "Fix"
+msgstr "Reparieren"
+
+msgid "Fix Silent"
+msgstr "Stille Reparieren"
+
+msgid "Illegal rule - cannot end with /*"
+msgstr "Unzulässige Regel - darf nicht mit /* enden"
+
+msgid "Inclusion"
+msgstr "Einbindung"
+
+msgid "Info"
+msgstr "Info"
+
+msgid "Information"
+msgstr "Information"
+
+msgid "Level"
+msgstr "Stufe"
+
+msgid ""
+"Lists all the files modified from the last 'sync' command that have to "
+"recompute their redundancy data."
+msgstr "Zeige alle durch den letzten 'sync'-Befehl veränderten Dateien, deren Prüfdaten neu berechnet werden müssen."
+
+msgid "Message"
+msgstr "Mitteilung"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "No Hidden"
+msgstr "keine Versteckten"
+
+msgid "Optional - Enter file or directory to undelete"
+msgstr "Optional - Datei oder Ordner zur Wiederherstellung auswählen"
+
+msgid "Parity"
+msgstr "Parität"
+
+msgid "Please first select a volume."
+msgstr "Bitte wählen Sie zuerst ein Volumen aus."
+
+msgid "Pre-Hash"
+msgstr ""
+
+msgid "Prehash+Sync"
+msgstr ""
+
+msgid "Prints a status report of the array."
+msgstr "Gibt einen Stautsbericht über den Laufwerksverbund aus"
+
+msgid "Read all data two times to ensure its integrity."
+msgstr ""
+
+msgid "Refresh"
+msgstr "Aktualisieren"
+
+msgid "Restore the last backup/snapshot."
+msgstr "Letztes Backup/letzte Momentaufnahme wiederherstellen."
+
+msgid "Rule"
+msgstr "Regel"
+
+msgid "Rule Type"
+msgstr "Regeltyp"
+
+msgid "Rules"
+msgstr "Regeln"
+
+msgid "Run Scrub"
+msgstr "Bereinigung ausführen"
+
+msgid "SMART"
+msgstr "SMART"
+
+msgid "Scheduled diff"
+msgstr ""
+
+msgid "Scrub"
+msgstr "Bereinigung"
+
+msgid "Scrub Frequency"
+msgstr "Bereinigungsintervall"
+
+msgid "Scrub Percentage"
+msgstr "Prozentanteil Bereinigung"
+
+msgid "Scrub percentage used for diff script."
+msgstr "Prozentanteil Bereinigung verwendet für Diff Skript"
+
+msgid "Scrub percentage used for scrub button on Drives tab."
+msgstr "Prozentanteil Bereinigung verwendet für \"Bereinigen\" Knopf im \"Laufwerke\" Menü"
+
+msgid "Scrubs the array, checking for silent errors."
+msgstr "Bereinigt das Array, prüft auf unentdeckte Fehler."
+
+msgid "Select a drive ..."
+msgstr "Wählen Sie ein Laufwerk aus ..."
+
+msgid "Select a volume ..."
+msgstr "Wählen Sie ein Volumen aus ..."
+
+msgid "Send Mail"
+msgstr "E-Mail senden"
+
+msgid "Set to true if you want to scrub after a successful sync"
+msgstr "Aktivieren wenn Bereinigung nach erfolgreicher Synchronisierung gestartet werden soll"
+
+msgid "Settings"
+msgstr "Einstellungen"
+
+msgid "SnapRAID"
+msgstr "SnapRAID"
+
+msgid "SnapRAID user manual"
+msgstr "SnapRAID-Anwenderhandbuch"
+
+msgid "Snapraid Config Files"
+msgstr "Snapraid-Konfigurationsdateien"
+
+msgid "Specify whether the rule is an exclusion or inclusion."
+msgstr "Wählen ob die Regel ein- oder ausschließt"
+
+msgid "Spin"
+msgstr "Steuern"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Sync"
+msgstr "Synchronisierung"
+
+msgid "Syslog"
+msgstr "Syslog"
+
+msgid ""
+"The following excludes are written to the snapraid config file by default:"
+msgstr "Die folgenden Ausschlüsse werden per Voreinstellung in die SnapRAID-Konfigurationsdatei geschrieben: "
+
+msgid "Tools"
+msgstr "Werkzeuge"
+
+msgid "Undelete"
+msgstr "Wiederherstellen"
+
+msgid "Units in days."
+msgstr "Einheiten in Tagen."
+
+msgid "Up"
+msgstr "Starten"
+
+msgid ""
+"Updates the redundancy information. All the modified files in the disk array"
+" are read, and the redundancy data is recomputed."
+msgstr "Aktualisiert die Prüfdaten. Alle veränderten Dateien im Plattenarray werden gelesen, und ihre Prüfdaten werden neu berechnet."
+
+msgid "Volume"
+msgstr "Volumen"
+
+msgid "Write logs to syslog"
+msgstr "Protokoll in das syslog schreiben"
+
+msgid "snapraid-diff.conf"
+msgstr "snapraid-diff.conf"
+
+msgid "snapraid.conf"
+msgstr "snapraid.conf"

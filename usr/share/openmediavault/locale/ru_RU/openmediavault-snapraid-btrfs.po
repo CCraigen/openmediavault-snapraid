@@ -1,0 +1,300 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the openmediavault-snapraid package.
+#
+# Translators:
+# Alexander Savchenko, 2014-2015
+# Артур Мудрых <arturmon82@gmail.com>, 2013
+# Артур Мудрых <arturmon82@gmail.com>, 2017
+# Дмитрий <bardimnik@rambler.ru>, 2019
+msgid ""
+msgstr ""
+"Project-Id-Version: openmediavault-snapraid\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-10-28 08:40-0500\n"
+"PO-Revision-Date: 2019-08-08 14:11+0000\n"
+"Last-Translator: Дмитрий <bardimnik@rambler.ru>\n"
+"Language-Team: Russian (http://www.transifex.com/openmediavault-plugin-developers/openmediavault-snapraid/language/ru/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: ru\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%100>=11 && n%100<=14)? 2 : 3);\n"
+
+msgid "A data drive cannot be a parity drive."
+msgstr "Диск данных не может быть Диском контроля четности."
+
+msgid "Add drive"
+msgstr "Добавить диск"
+
+msgid "Add rule"
+msgstr "Добавить правило"
+
+msgid "Auto Save"
+msgstr "Авто сохранение"
+
+msgid ""
+"Automatically save the state when syncing after the specified amount of GiB "
+"is processed. Default value is 0, meaning disabled."
+msgstr "Автоматически сохранять состояние при синхронизации спустя заданное количество GiB обработанного. Значение по умолчанию равно 0, что означает, отключен."
+
+msgid "Block Size"
+msgstr "Размер блока"
+
+msgid "Block size in KiB"
+msgstr "Размер блока в KiB"
+
+msgid "Check"
+msgstr "Check"
+
+msgid ""
+"Checks all the files and the redundancy data. All the files are hashed and "
+"compared with the snapshot saved in the previous 'sync' command."
+msgstr "Проверяет все файлы и избыточность данных. Все файлы хэшируются и по сравниваются с снимком сохраненным в предыдущей команде «Sync»."
+
+msgid "Component"
+msgstr "Компонент"
+
+msgid "Config"
+msgstr "Конфигурация"
+
+msgid "Content"
+msgstr "\"Содержимое\""
+
+msgid "Create scheduled diff job"
+msgstr "Создать запланированную задачу сравнения"
+
+msgid "Data"
+msgstr "\"Данные\""
+
+msgid "Date & Time"
+msgstr "Дата и Время"
+
+msgid "Debug"
+msgstr "Отладка"
+
+msgid ""
+"Define threshold of files deleted to start the sync-process. default = 0 to "
+"make sure no sync process is started while testing or if there are any "
+"deleted files"
+msgstr "Определите порог удаляемых файлов, чтобы запустить синхронизацию. Default = 0, убедитесь, что процесс синхронизации не запущен во время тестирования или есть какие-либо удаленные файлы"
+
+msgid "Delete Threshold"
+msgstr "Удалить порог"
+
+msgid "Description of Buttons on Drives tab"
+msgstr "Описание кнопок на вкладке Drives"
+
+msgid "Devices"
+msgstr "Устройства"
+
+msgid "Diff"
+msgstr "Diff"
+
+msgid "Diff Script Settings"
+msgstr "Настройка сценария сравнения"
+
+msgid "Down"
+msgstr "Остановить"
+
+msgid "Drive"
+msgstr "Диск"
+
+msgid ""
+"Drive where content file is stored.  This file is a list of saved files and "
+"contains the details of your backup with all the checksums to verify its "
+"integrity."
+msgstr "Диск, на котором хранится файл содержимого. Этот файл представляет собой список сохраненных файлов и содержит сведения о вашей резервной копии со всеми контрольными суммами для проверки ее целостности."
+
+msgid "Drive where data is stored."
+msgstr "Диск, на котором хранятся данные."
+
+msgid ""
+"Drive where parity files are stored which are necessary to recover from disk"
+" failure.  For each parity drive, one data drive can fail without data loss."
+msgstr "Диск, в котором хранятся контрольные суммы, необходимые для восстановления после сбоя диска. Для каждого диска контроля четности один накопитель данных может выйти из строя без потери данных."
+
+msgid "Drives"
+msgstr "Диски"
+
+msgid "Edit drive"
+msgstr "Редактировать диск"
+
+msgid "Edit rule"
+msgstr "Редактировать правило"
+
+msgid "Excludes hidden files and directories."
+msgstr "Исключает скрытые файлы и каталоги"
+
+msgid "Exclusion"
+msgstr "Исключения"
+
+msgid "Fix"
+msgstr "Fix"
+
+msgid "Fix Silent"
+msgstr "Исправить молчание"
+
+msgid "Illegal rule - cannot end with /*"
+msgstr "Недопустимое правило - не может заканчиваться /*"
+
+msgid "Inclusion"
+msgstr "Включает"
+
+msgid "Info"
+msgstr "Информация"
+
+msgid "Information"
+msgstr "Информация"
+
+msgid "Level"
+msgstr "Уровень"
+
+msgid ""
+"Lists all the files modified from the last 'sync' command that have to "
+"recompute their redundancy data."
+msgstr "Список всех файлов, измененных с последнего «Sync», которые должны пересчитать их избыточность."
+
+msgid "Message"
+msgstr "Сообщение"
+
+msgid "Name"
+msgstr "Имя"
+
+msgid "No Hidden"
+msgstr "Никаких скрытых"
+
+msgid "Optional - Enter file or directory to undelete"
+msgstr "Необязательно - введите файл или каталог для восстановления"
+
+msgid "Parity"
+msgstr "Соотношение"
+
+msgid "Please first select a volume."
+msgstr "Сначала выберите том."
+
+msgid "Pre-Hash"
+msgstr "Предварительное хэширование"
+
+msgid "Prehash+Sync"
+msgstr "Предварительное хэширование+Синхронизация"
+
+msgid "Prints a status report of the array."
+msgstr "Показать отчет о состоянии массива."
+
+msgid "Read all data two times to ensure its integrity."
+msgstr "Прочитать все данные два раза, чтобы обеспечить его целостность."
+
+msgid "Refresh"
+msgstr "Обновить"
+
+msgid "Restore the last backup/snapshot."
+msgstr "Восстановить с последней резервной копии / снимка."
+
+msgid "Rule"
+msgstr "Правило"
+
+msgid "Rule Type"
+msgstr "Тип правил"
+
+msgid "Rules"
+msgstr "Правила"
+
+msgid "Run Scrub"
+msgstr "Выполнить скраб"
+
+msgid "SMART"
+msgstr "СМАРТ"
+
+msgid "Scheduled diff"
+msgstr "Запланированное сравнение"
+
+msgid "Scrub"
+msgstr "Scrub"
+
+msgid "Scrub Frequency"
+msgstr "Частота скраба"
+
+msgid "Scrub Percentage"
+msgstr "Процент скраба"
+
+msgid "Scrub percentage used for diff script."
+msgstr "Процент скраба, используемый для скрипта сравнения."
+
+msgid "Scrub percentage used for scrub button on Drives tab."
+msgstr "Процент скраба, используемый для кнопки очистки на вкладке «Диски»."
+
+msgid "Scrubs the array, checking for silent errors."
+msgstr "Scrub массива, проверка на скрытые ошибки."
+
+msgid "Select a drive ..."
+msgstr "Выберите диск ..."
+
+msgid "Select a volume ..."
+msgstr "Выберите том ..."
+
+msgid "Send Mail"
+msgstr "Отправить письмо"
+
+msgid "Set to true if you want to scrub after a successful sync"
+msgstr "Установите, если вы хотите, чтобы скраб прошел после успешной синхронизации"
+
+msgid "Settings"
+msgstr "Настройки"
+
+msgid "SnapRAID"
+msgstr "SnapRAID"
+
+msgid "SnapRAID user manual"
+msgstr "Инструкция SnapRAID"
+
+msgid "Snapraid Config Files"
+msgstr "Файлы конфигурации Snapraid"
+
+msgid "Specify whether the rule is an exclusion or inclusion."
+msgstr "Укажите, является ли правило исключением или включением."
+
+msgid "Spin"
+msgstr "Вращение"
+
+msgid "Status"
+msgstr "Status"
+
+msgid "Sync"
+msgstr "Sync"
+
+msgid "Syslog"
+msgstr "Syslog"
+
+msgid ""
+"The following excludes are written to the snapraid config file by default:"
+msgstr "Следующие исключения записываются в конфигурационный файл snapraid по умолчанию:"
+
+msgid "Tools"
+msgstr "Утилиты"
+
+msgid "Undelete"
+msgstr "Отменить удаление"
+
+msgid "Units in days."
+msgstr "Единицы в днях."
+
+msgid "Up"
+msgstr "Запустить"
+
+msgid ""
+"Updates the redundancy information. All the modified files in the disk array"
+" are read, and the redundancy data is recomputed."
+msgstr "Обновление информации об избыточности. Все изменения файлов в дисковом массиве считываются, и избыточность данных пересчитывается."
+
+msgid "Volume"
+msgstr "Том"
+
+msgid "Write logs to syslog"
+msgstr "Запись журналов в syslog"
+
+msgid "snapraid-diff.conf"
+msgstr "snapraid-diff.conf"
+
+msgid "snapraid.conf"
+msgstr "snapraid.conf"
